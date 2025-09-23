@@ -1,0 +1,17 @@
+[
+ {
+  "category": "Main",
+  "custom_icon": "/private/files/icons8-home-512.svg",
+  "docstatus": 0,
+  "doctype": "Sidebar Menu Item",
+  "icon": null,
+  "link_to": "Workspace",
+  "modified": "2025-09-23 23:03:30.053182",
+  "name": 1,
+  "name1": "Home",
+  "route": "/app/carseer-home",
+  "url": null,
+  "use_custom_icon": 1,
+  "workspace": "Carseer Home"
+ }
+]

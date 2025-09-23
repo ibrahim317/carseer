@@ -57,12 +57,16 @@ app_license = "mit"
 # ----------
 
 # application home page (will override Website Settings)
-# home_page = "login"
+# home_page = "carseer"
 
 # website user home page (by Role)
 # role_home_page = {
 # 	"Role": "home_page"
 # }
+
+website_route_rules = [
+    {"from_route": "/Report/SharedReport/:id", "to_route": "Report/SharedReport"},
+]
 
 # Generators
 # ----------
@@ -237,3 +241,15 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+fixtures = [
+	# To export specific documents from a DocType, use a dictionary with filters.
+	# Kanban Boards and Statuses
+	{"doctype": "Workspace"},
+	# Form Customizations
+	{"doctype": "Property Setter"},
+	{"doctype": "Custom Field"},
+	# Enhanced Sidebar
+	{"doctype": "Enhanced Navbar Settings"},
+	{"doctype": "Sidebar Menu Item"},
+	{"doctype": "Sidebar Category"},
+]

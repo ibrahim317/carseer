@@ -1,0 +1,136 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2025-09-23 17:37:04.014625",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "header_section",
+  "price",
+  "vechicle",
+  "vin",
+  "column_break_xeqy",
+  "report_id",
+  "report_date",
+  "assessment_section",
+  "issues",
+  "odometer",
+  "vehicle_assessment",
+  "column_break_hhfu",
+  "ownership",
+  "others",
+  "car_history_section",
+  "table_rtmd"
+ ],
+ "fields": [
+  {
+   "fieldname": "header_section",
+   "fieldtype": "Section Break",
+   "label": "Header"
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Float",
+   "label": "Price"
+  },
+  {
+   "fieldname": "vechicle",
+   "fieldtype": "Data",
+   "label": "Vechicle"
+  },
+  {
+   "fieldname": "vin",
+   "fieldtype": "Data",
+   "label": "VIN"
+  },
+  {
+   "fieldname": "column_break_xeqy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "report_id",
+   "fieldtype": "Int",
+   "label": "Report ID",
+   "unique": 1
+  },
+  {
+   "fieldname": "report_date",
+   "fieldtype": "Datetime",
+   "label": "Report Date"
+  },
+  {
+   "fieldname": "assessment_section",
+   "fieldtype": "Section Break",
+   "label": "Assessment"
+  },
+  {
+   "fieldname": "issues",
+   "fieldtype": "Rating",
+   "label": "Issues"
+  },
+  {
+   "fieldname": "odometer",
+   "fieldtype": "Rating",
+   "label": "Odometer"
+  },
+  {
+   "fieldname": "vehicle_assessment",
+   "fieldtype": "Rating",
+   "label": "Vehicle Assessment",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_hhfu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ownership",
+   "fieldtype": "Rating",
+   "label": "Ownership"
+  },
+  {
+   "fieldname": "others",
+   "fieldtype": "Rating",
+   "label": "Others"
+  },
+  {
+   "fieldname": "car_history_section",
+   "fieldtype": "Section Break",
+   "label": "Car History"
+  },
+  {
+   "fieldname": "table_rtmd",
+   "fieldtype": "Table",
+   "options": "Histroy In Country"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-09-23 22:56:24.598900",
+ "modified_by": "Administrator",
+ "module": "Carseer",
+ "name": "Car Report",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

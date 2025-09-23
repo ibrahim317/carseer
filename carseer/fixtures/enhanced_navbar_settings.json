@@ -1,0 +1,13 @@
+[
+ {
+  "custom_logo": "/files/images.png",
+  "custom_logo_href": "/app/carseer-home",
+  "custom_title": "Carseer",
+  "docstatus": 0,
+  "doctype": "Enhanced Navbar Settings",
+  "enable_top_navbar": 1,
+  "hide_app_switcher": 1,
+  "modified": "2025-09-23 23:04:06.471209",
+  "name": "Enhanced Navbar Settings"
+ }
+]

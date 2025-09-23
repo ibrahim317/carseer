@@ -1,0 +1,225 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "autoincrement",
+ "creation": "2025-09-23 17:42:11.145901",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "column_break_rhnk",
+  "country",
+  "summary_section",
+  "last_odometer_read",
+  "title_change_alert",
+  "owership_type",
+  "owners_in_this_country",
+  "issues_check_means_there_is_an_issue_section",
+  "junk",
+  "damage",
+  "engine_change",
+  "cdd_records",
+  "column_break_bvfo",
+  "flood",
+  "odometer_issue",
+  "registration_type_change",
+  "work_within_app_fleet",
+  "column_break_puwt",
+  "total_loss",
+  "noted_previous_use",
+  "usage_change",
+  "column_break_aoam",
+  "fire",
+  "gas_installtion_was_detected",
+  "color_change",
+  "column_break_nqev",
+  "salvage",
+  "miscellaneous",
+  "accidents_in_jordan"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_rhnk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Country",
+   "options": "South Korea\nJordan\nCanada\nEurope\nUK\nAmerica",
+   "reqd": 1
+  },
+  {
+   "fieldname": "summary_section",
+   "fieldtype": "Section Break",
+   "label": "Summary"
+  },
+  {
+   "fieldname": "last_odometer_read",
+   "fieldtype": "Int",
+   "label": "Last Odometer Read "
+  },
+  {
+   "fieldname": "owership_type",
+   "fieldtype": "Select",
+   "label": "Owership Type",
+   "options": "Ownership\nLease"
+  },
+  {
+   "fieldname": "owners_in_this_country",
+   "fieldtype": "Int",
+   "label": "Owners In This Country"
+  },
+  {
+   "fieldname": "issues_check_means_there_is_an_issue_section",
+   "fieldtype": "Section Break",
+   "label": "Issues (Check means there is an issue)"
+  },
+  {
+   "default": "0",
+   "fieldname": "junk",
+   "fieldtype": "Check",
+   "label": "Junk"
+  },
+  {
+   "default": "0",
+   "fieldname": "damage",
+   "fieldtype": "Check",
+   "label": "Damage"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval: doc.country == \"Jordan\"",
+   "fieldname": "engine_change",
+   "fieldtype": "Check",
+   "label": "Engine Change"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval: doc.country == \"Jordan\"",
+   "fieldname": "cdd_records",
+   "fieldtype": "Check",
+   "label": "CDD Records"
+  },
+  {
+   "fieldname": "column_break_bvfo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "flood",
+   "fieldtype": "Check",
+   "label": "Flood"
+  },
+  {
+   "default": "0",
+   "fieldname": "odometer_issue",
+   "fieldtype": "Check",
+   "label": "Odometer Issue"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval: doc.country == \"Jordan\"",
+   "fieldname": "registration_type_change",
+   "fieldtype": "Check",
+   "label": "Registration Type Change"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval: doc.country == \"Jordan\"",
+   "fieldname": "work_within_app_fleet",
+   "fieldtype": "Check",
+   "label": "Work within App. Fleet"
+  },
+  {
+   "fieldname": "column_break_puwt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_loss",
+   "fieldtype": "Check",
+   "label": "Total Loss"
+  },
+  {
+   "default": "0",
+   "fieldname": "noted_previous_use",
+   "fieldtype": "Check",
+   "label": "Noted Previous Use"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval: doc.country == \"Jordan\"",
+   "fieldname": "usage_change",
+   "fieldtype": "Check",
+   "label": "Usage Change "
+  },
+  {
+   "fieldname": "column_break_aoam",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "fire",
+   "fieldtype": "Check",
+   "label": "Fire"
+  },
+  {
+   "default": "0",
+   "fieldname": "gas_installtion_was_detected",
+   "fieldtype": "Check",
+   "label": "GAS installtion was detected"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval: doc.country == \"Jordan\"",
+   "fieldname": "color_change",
+   "fieldtype": "Check",
+   "label": "Color Change "
+  },
+  {
+   "fieldname": "column_break_nqev",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "salvage",
+   "fieldtype": "Check",
+   "label": "Salvage"
+  },
+  {
+   "default": "0",
+   "fieldname": "miscellaneous",
+   "fieldtype": "Check",
+   "label": "Miscellaneous"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval: doc.country == \"Jordan\"",
+   "fieldname": "accidents_in_jordan",
+   "fieldtype": "Check",
+   "label": "Accidents in Jordan"
+  },
+  {
+   "fieldname": "title_change_alert",
+   "fieldtype": "Data",
+   "label": "Title Change Alert"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-09-23 22:51:40.980678",
+ "modified_by": "Administrator",
+ "module": "Carseer",
+ "name": "Histroy In Country",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
