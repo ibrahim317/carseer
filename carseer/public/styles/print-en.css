@@ -1,0 +1,774 @@
+@media print {
+    * {
+        -webkit-print-color-adjust: exact !important; /*Chrome, Safari */
+        color-adjust: exact !important; /*Firefox*/
+    }
+
+    .h3c-price-qr__title.xxsmall-text {
+        margin-bottom: 7px !important;
+    }
+
+    h3.c-price-qr__title.xxsmall-text {
+    }
+
+    h3.c-price-qr__title.xxsmall-text {
+        margin-bottom: 11px !important;
+    }
+
+    .c-price-qr.hide.show-print {
+        padding-bottom: 12px !important;
+    }
+
+    main {
+        background-color: #F1F1F1;
+    }
+
+    .medium-text {
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .xmedium-text {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .small-text {
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .xsmall-text {
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .xxsmall-text {
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .large-text {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+
+    .report-header-intro {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-align: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .report-header-intro__logo {
+        display: block;
+        width: 46px;
+        height: 29px;
+    }
+
+        .report-header-intro__logo img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+    .report-header-intro__details {
+        padding-left: 16px;
+    }
+
+    .header-title .header-download {
+        display: none;
+    }
+
+    .report-header-intro__details {
+        margin-right: 0;
+    }
+
+    .report-about--top {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .report-about--top__details .number {
+        margin-top: 4px;
+        margin-bottom: 4px;
+        margin-right: 9px;
+    }
+  
+
+    .report-about--top__details .county-flag {
+        width: 12px;
+        height: 12px;
+        margin-left: 3px;
+    }
+
+    .report-main-header-wrapper {
+        padding: 20px 0 16px 0;
+    }
+
+    .report-about--top__qr {
+        width: 40px;
+        height: 40px;
+        margin-left: 16px;
+        top: 0px;
+    }
+
+    .report-about--top__details .number-value {
+        margin-left: 40px;
+    }
+
+    .report-intro {
+        padding: 14px 0 10px 0;
+    }
+
+    .c-intro-infos__item {
+        margin-bottom: 12px;
+    }
+
+        .c-intro-infos__item .body {
+            margin-top: 4px;
+        }
+
+    .report-intro__image {
+        width: 229px;
+        height: 120px;
+        right: 16px;
+    }
+
+    .top-rating-wrapper {
+        padding: 10px 0;
+    }
+
+        .top-rating-wrapper .rating-stars__item {
+            width: 20px;
+            height: 20px;
+        }
+
+        .top-rating-wrapper .rating-stars {
+            margin-left: 12px;
+        }
+
+        .top-rating-wrapper .rating-stars__item:not(:first-child) {
+            margin-left: 8px;
+        }
+
+    .report-section__block {
+        padding-top: 7px;
+    }
+
+    .report-noHistoy-card {
+        font-size: 9px;
+        line-height: 11px;
+        height: 170px;
+    }
+
+    .noHistoy-card-info {
+        padding-top: 24px;
+    }
+
+    .noHistoy-card-info__icon {
+        width: 23px;
+        height: 23px;
+    }
+
+    .report-page .main-header {
+        display: none;
+    }
+
+    .js-sticky.report-main-header {
+        height: auto;
+    }
+
+    .js-sticky .report-main-header-wrapper {
+        position: relative;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .report-container {
+        padding: 0 40px;
+    }
+
+    .report-intro-info {
+        max-width: 500px;
+    }
+
+    .report-footer--print {
+        display: block;
+        margin-top: 32px;
+    }
+
+    .report-histoy-card {
+        height: 140px;
+        padding: 24px 15px 10px 15px;
+    }
+
+    .history-owner-badge {
+        width: 54px;
+        height: 81px;
+        right: 28px;
+    }
+
+    .histroy-info__icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .histroy-info__details {
+        margin-left: 11px;
+    }
+
+    .histoy-card-info__item {
+        margin-bottom: 32px;
+    }
+
+    .history-card-header-info__title .country-flag {
+        width: 13px;
+        height: 13px;
+        margin-left: 8px;
+    }
+
+    .history-card-header {
+        margin-bottom: 10px;
+        -webkit-box-align: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .history-timeline-block__item:not(:last-child) {
+        padding-bottom: 24px;
+    }
+
+    .history-card-header-info__date {
+        margin-bottom: 10px;
+    }
+
+        .history-card-header-info__date:before {
+            width: 14px;
+            height: 14px;
+            left: -25px;
+        }
+
+    .history-timeline-block__item:not(:last-child):before {
+        top: 6px;
+    }
+
+    .history-card-header-date:before {
+        width: 8px;
+        height: 8px;
+        left: -28px;
+    }
+
+    .car-evaluation-wrapper,
+    .car-regestration-block,
+    .no-regestration-block,
+    .NoEvaluation-block {
+        height: 180px;
+        max-height: 180px;
+    }
+
+    .car-regestration-block {
+        padding: 16px 8px 8px 45px;
+    }
+
+    .regestration-info__item {
+        margin-bottom: 16px;
+    }
+
+    .evaluation-range .value {
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .car-evaluation-wrapper {
+        padding: 16px 16px 32px 16px;
+    }
+
+    .car-evaluation {
+        padding: 0 0 60px 0;
+    }
+
+    .no-regestration-block {
+        padding: 16px 22px;
+    }
+
+    .NoEvaluation-block {
+        padding: 16px 16px 16px 16px;
+    }
+
+    .NoEvaluation-block__title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .NoEvaluation-block__image {
+        height: 57px;
+    }
+
+    .report-general-info-wrapper {
+        padding: 22px 48px;
+    }
+
+    .r-general-info-list__item .body .flag {
+        left: -29px;
+        top: -6px;
+        width: 17px;
+        height: 17px;
+    }
+
+    .report-footer-logo {
+        width: 53px;
+        height: 13px;
+    }
+
+    report-footer-info.xmedium-text {
+        font-size: 8px;
+        line-height: 10px;
+    }
+
+    .report-footer--print,
+    .report-footer {
+        padding: 10px 0;
+    }
+
+    .report-card-block:before {
+        top: -4px;
+        height: 11px;
+    }
+
+    .report-section-header-title .country-flag {
+        width: 13px;
+        height: 13px;
+        margin-right: 9px;
+        top: 1px;
+        left: -35px;
+    }
+
+    .report-section__header {
+        position: relative;
+        padding: 8px 0 9px 0;
+        top: 0;
+    }
+
+
+    .report-section--timeline .report-container:not(:first-child):before {
+        left: 12px;
+    }
+
+    .single-table-intro {
+        margin-bottom: 20px;
+    }
+
+    .single-table-intro__date:before {
+        width: 8px;
+        height: 8px;
+    }
+
+    .car-specs-wrapper .report-card-block__state {
+        top: -14px;
+    }
+
+    .car-specs-wrapper .report-card-block__state {
+        width: 23px;
+        height: 23px;
+    }
+
+    .car-specs-block__icon {
+        width: 34px;
+        height: 34px;
+    }
+
+    .car-specs-block {
+        padding: 22px 22px 20px 22px;
+    }
+
+    .table-col-block__header-title {
+        font-size: 9px;
+        line-height: 11px;
+    }
+
+
+    .table-row {
+        padding: 12px 0 10px 0;
+    }
+
+    .table-row--header {
+        margin-top: -46px;
+        padding: 0 0 24px 0;
+    }
+
+
+    .tables-list__item:not(:first-child) {
+        margin-top: 32px;
+    }
+
+    .ship-block__title {
+        top: 27px;
+    }
+
+        .ship-block__title:before {
+            height: 950%;
+            left: -28px;
+            bottom: 3px;
+        }
+
+        .ship-block__title:after {
+            width: 8px;
+            height: 8px;
+        }
+
+    .ship-block-wrapper {
+        height: 90px;
+    }
+
+    .report-section--timeline .report-container:not(:first-child):after {
+        right: -16px;
+        width: 6px;
+        height: 6px;
+    }
+
+    .report-section-block-title {
+        margin-bottom: 20px;
+    }
+
+        .report-section-block-title .title-icon {
+            width: 23px;
+            height: 23px;
+        }
+
+    .countries-block__title {
+        padding: 36px 20px 32px 20px;
+    }
+
+    .countries-list-wrapper {
+        padding: 19px 0 12px 16px;
+    }
+
+    .countries-list__item .country-flag {
+        width: 21px;
+        height: 21px;
+    }
+
+    .stolen-icon {
+        width: 21px;
+        height: 21px;
+    }
+
+    .stolen-list .stolen-country-flag {
+        width: 21px;
+        height: 21px;
+    }
+
+    .stolen-list .stolen-country-name {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .detailed-rating-list__item {
+        width: 20%;
+    }
+
+    .detailed-rating-list {
+        width: 68%;
+    }
+
+    .final-rating-block {
+        width: 180px;
+    }
+
+    .detailed-rating-list .rating-stars__item {
+        width: 13px;
+        height: 13px;
+    }
+
+    .final-rating-block .rating-stars__item {
+        width: 18px;
+        height: 18px;
+    }
+
+    .detailed-rating-list .car-rating {
+        padding: 20px 0 24px 0;
+    }
+
+    .final-rating-block {
+        padding: 17px 0 20px 0;
+    }
+
+        .final-rating-block .rating-stars {
+            margin-top: 16px;
+        }
+
+    .album-list__item {
+        margin-bottom: 16px;
+    }
+
+    .album-image-block {
+        height: 100px;
+    }
+
+    .report-small-footer__top {
+        padding: 32px 24px 22px 24px;
+    }
+
+    .report-about-main__logo {
+        width: 72px;
+        height: 18px;
+    }
+
+    .report-about-QR__code {
+        width: 68px;
+        height: 68px;
+        flex: 0 0 68px;
+    }
+
+    .donwload-report {
+        display: none;
+    }
+
+    .report-num {
+        float: none;
+    }
+
+    .report-num__copy {
+        display: none;
+    }
+
+    .report-small-footer__bottom {
+        padding: 27px 24px 10px 24px;
+    }
+
+    .report-card-block-title {
+        margin-bottom: 10px;
+    }
+
+    .history-info-info-wrapper {
+        max-width: 500px;
+    }
+
+        .history-info-info-wrapper .histoy-card-info {
+            margin-left: -48px;
+        }
+
+        .history-info-info-wrapper .histoy-card-info__item {
+            padding-left: 48px;
+        }
+
+    .header-title__text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .report-header-intro__details .price {
+        display: block;
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 4px;
+    }
+
+    .table-intro__title {
+        left: 12px;
+    }
+
+
+    .report-section--timeline .report-container {
+        border-right: 1px solid red;
+    }
+
+    .c-price-view__title {
+        font-size: 45px !important;
+        line-height: 48px !important;
+    }
+    .c-price-view__titlesmall {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .price-range {
+        width: 100%;
+        margin: 0 auto 10px auto;
+    }
+
+    .price-range-inner__line {
+        width: 80px;
+    }
+
+    .price-range__edge {
+        width: 24px;
+    }
+
+    .c-price-qr__code {
+        width: 70px;
+        height: 70px;
+    }
+
+    .c-price-view {
+        padding: 9px 0 0px !important;
+    }
+
+    .c-find-price {
+        padding: 24px 0 16px 0;
+    }
+
+    .c-find-price__btn {
+        padding: 8px 16px 11px 16px;
+    }
+
+    .c-price-pending {
+        padding: 16px 0 16px 0;
+    }
+
+    .c-find-price__icon {
+        width: 66px;
+        height: 39px;
+    }
+
+    .modal-content-block--evaluation-form .modal-content-block__image {
+        width: 100px;
+        height: 55px
+    }
+
+    .c-evaluation-wrapper {
+        padding: 0 24px 20px 24px;
+    }
+
+ 
+        .print-only {
+            display: inline;
+
+        }
+
+    .reliability_image {
+        max-width: 80% !important;
+    }
+
+    .reliability_content {
+        width: fit-content !important;
+        border-top-width: medium !important;
+    }
+
+    .stars_margin {
+        margin-top: 2px !important;
+        display: flex !important;
+        margin-left: -32px !important;
+    }
+
+    .reliability_img {
+        height: 75px !important;
+        width: fit-content !important;
+        max-width: 170px;
+        margin: 2px 10px 10px 10px !important;
+    }
+
+    .parent_div {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 10px;
+        margin-left: -5px !important;
+        margin-right: -9px !important;
+    }
+
+
+    .reliability_square {
+        flex: 1 !important;
+        text-align: center !important;
+        border: 1px solid #f93 !important;
+        margin: 0 3px !important;
+        width: 69px !important;
+        height: 82px !important;
+    }
+
+    .reliability_item_img {
+        /*width: 100px;*/
+        height: 52px !important;
+        margin-top: -13px !important;
+    }
+
+    .img_reli {
+        width: 40px !important;
+        height: 40px !important;
+        margin: 0px -2px -1px -4px !important;
+    }
+
+    .margin_word {
+        margin: -9px 3px -10px !important;
+        word-wrap: break-word !important;
+    }
+
+    .value_describtion {
+        /* padding-right: 34px !important;
+                                                font-size: 20px !important;
+                                                margin: 30px 8px 10px 10px !important;*/
+        font-size: 10px !important;
+        margin: 26px 3px 10px 10px !important;
+        font-family: din-reg,sans-serif !important;
+    }
+
+    .value_describtion_Maintenance {
+        /* padding-right: 34px !important;
+                   font-size: 20px !important;
+                   margin: 30px 8px 10px 10px !important;*/
+        font-size: 10px !important;
+        margin: 15px 3px 10px 10px !important;
+        font-family: din-reg,sans-serif !important;
+    }
+
+    .margin_long-word {
+        margin: 30px -8px 10px 10px !important;
+        padding-right: 34px !important;
+        font-size: 20px !important;
+    }
+
+    .font_text {
+        font-size: 8.5px !important;
+        margin: -5px 0px -26px 0px !important;
+    }
+
+
+
+    .carStars-margine {
+        margin: 15px -50px -2px -43px !important;
+        inline-size: 89px !important;
+    }
+
+   .li-stars {
+    width: 3px !important;
+    padding: 6px !important;
+    height: 13px !important;
+    margin: 1px !important;
+}
+    .for-Print {
+        margin: -5px 10px -16px 10px !important
+    }
+    .carseer_logo {
+        /* width: 100px; */
+        height: 24px !important;
+        margin-top: -3px !important;
+        margin-bottom: -6px !important;
+    }
+
+    .display {
+        display: none
+    }
+
+
+    .linked-block {
+        margin-top: -5px;
+    }
+
+    @page {
+        size: A4;
+    }
+   
+}
+

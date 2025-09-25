@@ -1,0 +1,12 @@
+﻿@media print
+{
+
+    .first_page_footer .report-footer {
+        DISPLAY: NONE !important;
+    }
+    .avoid-break.page-one {
+        HEIGHT: AUTO !important;
+    }
+    #history-usa {
+    }
+}

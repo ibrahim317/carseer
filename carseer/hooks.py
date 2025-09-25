@@ -64,9 +64,7 @@ app_license = "mit"
 # 	"Role": "home_page"
 # }
 
-website_route_rules = [
-    {"from_route": "/Report/SharedReport/:id", "to_route": "Report/SharedReport"},
-]
+
 
 # Generators
 # ----------

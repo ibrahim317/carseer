@@ -1,0 +1,4 @@
+﻿$(function ()
+{
+    CommonController.init();
+})

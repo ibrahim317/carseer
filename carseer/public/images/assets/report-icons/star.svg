@@ -1,0 +1,15 @@
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>star</title>
+    <desc>Created with Sketch.</desc>
+    <g id="star" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(1.000000, 1.000000)">
+            <g id="Group-12-Copy-2" fill="#FF9933">
+                <g id="Group-4-Copy-3">
+                    <circle id="Oval" cx="29" cy="29" r="29"/>
+                </g>
+            </g>
+            <polygon id="Star-Copy-3" fill="#FFFFFF" points="28.3555556 36.7333333 18.5068871 41.9110848 20.3878154 30.9444313 12.4200753 23.1778041 23.4312213 21.577791 28.3555556 11.6 33.2798898 21.577791 44.2910359 23.1778041 36.3232957 30.9444313 38.204224 41.9110848"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <meta property="og:title" content="{{ doc.vechicle }}-{{ doc.vin }}">
+    <meta property="og:description" content="Kia Niro Hybrid 2024">
+    <meta property="og:image" content="/assets/carseer/images/imgs/CarMockup/ ">
+    <title>{{ doc.vechicle }}-{{ doc.vin }}</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/carseer/images/favicon.png">
+
+
+
+    <link rel="stylesheet" href="/assets/carseer/lib/datepicker/datepicker.min.css">
+
+    <link href="/assets/carseer/lib/toastr.js/toastr.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/carseer/styles/main-en.min.css">
+    <link href="/assets/carseer/styles/css/site-en.css" rel="stylesheet">
+    <link href="/assets/carseer/styles/css/loader.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/carseer/styles/print-en.css">
+    <link href="/assets/carseer/styles/css/non-jordan-print.css" rel="stylesheet">
+    <link href="/assets/carseer/lib/Chart.js/Chart.css" rel="stylesheet">
+    <style>
+        .btn {
+            display: inline-block;
+            font-weight: 400;
+            color: #212529;
+            text-align: center;
+            vertical-align: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background-color: transparent;
+            border: 1px solid transparent;
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            border-radius: .25rem;
+            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        }
+
+        .btn-outline-dark {
+            color: #343a40;
+            border-color: #343a40;
+        }
+
+        .row {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        }
+
+        body {
+            margin: 0;
+        }
+    </style>
+    <style>
+        .price-range {
+            display: none;
+        }
+
+        .hide-price-range {
+            display: none;
+        }
+    </style>
+    <style>
+        .price-range {
+            display: none;
+        }
+    </style>
+    <style>
+        .finance-btn {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #fff;
+            border: 1px solid #f93 !important;
+            color: #f93;
+            margin-bottom: 15px;
+            font-family: din-bold, sans-serif;
+            font-size: 18px;
+            padding: 10px;
+        }
+
+        .estimated-date {
+            font-size: 18px;
+            font-family: din-bold, sans-serif;
+        }
+    </style>
+    <style>
+        .divLoan {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: auto;
+        }
+
+        .imgLoan {
+            width: 100px;
+            margin-left: 122px !important;
+            margin-top: 10px;
+        }
+    </style>
+
+</head>
+
+<body class="report-page">
+
+    <header class="main-header">
+
+        <div class="container hide-print">
+            <a href="/" class="main-logo bg-cover"></a>
+            <language-nav view-context="ViewContext"></language-nav>
+            <!--======Header actions======-->
+            <div class="header-actions-wrapper hide-print">
+                <!-- langauges menu -->
+                <div class="language-toggle small-text">
+                    <div class="js-language-toggle-trigger"><i class="arrow--black bg-cover"></i> En</div>
+                    <div class="language-menu js-header-lang-menu">
+                        <form id="form-lang" action="/Common/SetLanguagePost" method="post">
+                            <input type="hidden" name="returnUrl" value="/{{ doc.route | e }}">
+                            <input type="hidden" name="culture">
+                            <a href="#" data-txt="en-US" style="color:black"
+                                class="change-lang language-menu__item is-active">English</a>
+                            <a href="#" data-txt="ar-JO" style="color:black"
+                                class="change-lang language-menu__item ">عربي</a>
+                            <input name="__RequestVerificationToken" type="hidden"
+                                value="CfDJ8GyxmFXTyR9Bq24GjlD6HP7pmlLyKupeUgubN_wD0RzpLTOczgeKH5t46w5qOJdI7hXDwyNIF954T2PinVWEQxWVZANqA_Rg8hDHr23-m-ZadOPKKwxuwmJ9hIEOjDhD_nh1dUB6nkslclXDMKsJZ9k">
+                        </form>
+                    </div>
+                </div>
+                <!-- Login Action -->
+                <a class="header-login-info small-text" href="/Account/Login">
+                    <span>Login</span>
+                    <i class="header-login-info__icon bg-cover"></i>
+                </a>
+                <!-- Burger menu Icon -->
+                <span id="js-mainMenu-trigger" class="burger-menu bg-cover"></span>
+            </div>
+            <!--end of Header actions======-->
+        </div>
+
+        <script>
+            var FullReport = "True";
+
+
+        </script><!--======Burger Menu Content Block======-->
+        <div class="burger-menu-overlay" id="js-mainMenu-wrapper">
+            <div class="burger-menu-content">
+                <!--Burger Menu Header-->
+                <div class="burger-menu-header">
+                    <a href="/" class="burger-menu-header__logo bg-cover"></a>
+                    <span id="js-mainMenu-close" class="close-icon bg-cover"></span>
+                </div>
+                <!--Main menu-->
+                <nav class="mainMenu-nav medium-text">
+                    <ul class="mainMenu-list">
+
+                        <li class="mainMenu-list__item"><a href="/why-carseer-report">Why Carseer Report?</a></li>
+                        <li class="mainMenu-list__item"><a href="/what-carseer-report-contains">What's in Carseer
+                                Report?</a></li>
+                        <li class="download-menu-block__title small-text" style=" margin-top: 14px !important;"></li>
+
+                        <li class="mainMenu-list__item"><a href="/carseer-refetch-report">Refetch Report</a></li>
+                        <li class="download-menu-block__title small-text" style=" margin-top: 14px !important;"></li>
+
+                        <li class="mainMenu-list__item"><a href="/faqs-vehicle-report">FAQs </a></li>
+
+                        <li class="mainMenu-list__item"><a href="/Know-with-Carseer">Know with Carseer</a></li>
+                        <li class="mainMenu-list__item"><a href="/kit">Carseer Kit </a></li>
+                        <li class="download-menu-block__title small-text" style=" margin-top: 14px !important;"></li>
+                        <li class="mainMenu-list__item"><a href="/news-vehicle-report">Carseer News</a></li>
+                        <li class="mainMenu-list__item"><a href="/partners-accurate-vehicle-report">Partners</a></li>
+                        <li class="mainMenu-list__item"><a href="/contactus-offices-jordan-uae">Contact us</a></li>
+
+                    </ul>
+                </nav>
+                <!--Inner Langauge toggle-->
+                <div class="inner-lang-toggle">
+                    <h3 class="inner-lang-toggle__title small-text">Language</h3>
+                    <div class="inner-lang-toggle-list small-text">
+                        <form id="form-lang-mobile" action="/Common/SetLanguagePost" method="post">
+                            <input type="hidden" name="returnUrl" value="/{{ doc.route | e }}">
+                            <input type="hidden" id="culture-mobile" name="culture">
+                            <button data-txt="en-US" onclick="changeLangMobile('en-US')" style="color:black"
+                                class="inner-lang-toggle-list__link is-active">English</button>
+                            <button data-txt="ar-JO" onclick="changeLangMobile('ar-JO')" style="color:black"
+                                class="inner-lang-toggle-list__link ">عربي</button>
+                            <input name="__RequestVerificationToken" type="hidden"
+                                value="CfDJ8GyxmFXTyR9Bq24GjlD6HP7pmlLyKupeUgubN_wD0RzpLTOczgeKH5t46w5qOJdI7hXDwyNIF954T2PinVWEQxWVZANqA_Rg8hDHr23-m-ZadOPKKwxuwmJ9hIEOjDhD_nh1dUB6nkslclXDMKsJZ9k">
+                        </form>
+                    </div>
+                </div>
+                <!--Download App links-->
+                <div class="download-menu-block">
+                    <h3 class="download-menu-block__title small-text" style="border-bottom:0 !important">Dwonload
+                        Carseer Application</h3>
+                    <div class="download-menu-list">
+                        <a rel="nofollow"
+                            href="https://apps.apple.com/jo/app/carseer-%D8%AA%D9%82%D8%B1%D9%8A%D8%B1-%D9%83%D8%A7%D8%B1%D8%B3%D9%8A%D8%B1/id1226567967"
+                            class="download-menu-list__link apple-store bg-cover" target="_blank"></a>
+                        <a rel="nofollow" href="https://play.google.com/store/apps/details?id=com.carseer.app&amp;hl=ar"
+                            class="download-menu-list__link google-play-icon bg-cover" target="_blank"></a>
+                        <a rel="nofollow" href="https://appgallery.huawei.com/#/app/C102873961"
+                            class="download-menu-list__link app-gallery-sidebar-icon bg-cover" target="_blank"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function changeLangMobile(culture) {
+                debugger;
+                document.getElementById('culture-mobile').value = culture;
+                document.getElementById('form-lang-mobile').submit();
+            }
+
+        </script>
+        <!--end of Burger Menu Content Block======-->
+    </header>
+
+    <input type="hidden" id="OdometerReading" value="[
+  {
+    &quot;Value&quot;: &quot;14574&quot;,
+    &quot;Date&quot;: &quot;2023/05/30&quot;,
+    &quot;OdometerYear&quot;: 2023,
+    &quot;GraphColor&quot;: &quot;#1779B9&quot;
+  }
+]">
+    <input type="hidden" id="LangID" value="en">
+
+    <!--========REPORT MAIN=============================================================================================================-->
+    <main role="main">
+
+        <style type="text/css">
+            .print-hidden {
+                display: none;
+            }
+        </style>
+        <link rel="stylesheet" href="/assets/carseer/styles/print-en.css">
+
+        <section class="report-main-header">
+            <div class="report-main-header-wrapper">
+                <div class="report-header-block">
+                    <div class="report-container">
+                        <div class="report-header-intro">
+                            <div class="report-header-intro__logo">
+                                <a href="/{{ doc.route | e }}">
+                                    <img src="/assets/carseer/images/assets/logo/logo--small--white.svg" alt="CARSEER">
+                                </a>
+                            </div>
+                            <div class="report-header-intro__details">
+                                <div class="header-title">
+                                    <h1 class="header-title__text large-text">{{ (doc.title or _('CARSEER Report')) | e
+                                        }}</h1>
+                                    <a href="#" id="downloadReport">
+                                        <span class="header-download bg-cover download-report"
+                                            data-serial="{{ doc.report_id or '' }}" data-link="/{{ doc.route | e }}">
+                                        </span>
+                                    </a>
+
+                                    <a href="#" id="sendSms" data-id="{{ doc.report_id or '' }}"><span
+                                            class="header-download header-sms bg-cover"></span></a>
+
+                                    <a href="#" id="printReport" onclick="window.print()"><span
+                                            class="header-download header-print bg-cover"></span></a>
+
+                                    <div class="hide-options-container">
+                                        <a href="#" class="hide-options-menu-trigger">
+                                            <span class="header-download header-eye bg-cover" style="width:40px"></span>
+                                        </a>
+                                        <div class="hide-options-menu js-hide-options-menu">
+                                            <span class="hide-options-menu__item">
+                                                <input class="menu-item-input" id="hideVinAndPlate" type="checkbox">
+                                                <label>Hide vin and plate number</label>
+                                            </span>
+
+                                            <span class="hide-options-menu__item">
+                                                <input class="menu-item-input" id="hidePrice" type="checkbox">
+                                                <label>Hide Valuation price</label>
+                                            </span>
+
+                                            <span class="hide-options-menu__item">
+                                                <label class="hideElements" data-serial="{{ doc.report_id or '' }}"
+                                                    data-lang="en">Apply<i class="arrow--white bg-cover"></i></label>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="price medium-text">{{ doc.price or 0 }} USD</span>
+                            </div>
+                        </div>
+                        <div class="report-header-info">
+                            <div class="report-about--top">
+                                <div class="report-about--top__details">
+                                    <p class="title">CARSEER Other<span class="county-flag bg-cover"
+                                            style="background-image: url(/assets/carseer/images/imgs/flags/NULL.png);"></span>
+                                    </p>
+                                    <p class="number">
+                                        Report ID
+
+                                        <span class="number-value">{{ doc.report_id or '' }}</span>
+
+                                    </p>
+                                </div>
+                                <div class="report-about--top__qr">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="report-header-actions">
+
+                            <div class="hide-options-container">
+
+                                <a href="#" class="hide-options-menu-trigger">
+                                    <span class="report-header-actions__downlaod header-eye bg-cover"
+                                        style="width:35px"></span>
+                                </a>
+                                <div class="hide-options-menu js-hide-options-menu">
+                                    <span class="hide-options-menu__item">
+                                        <input class="menu-item-input" id="hideVinAndPlate" type="checkbox">
+                                        <label>Hide vin and plate number</label>
+                                    </span>
+
+                                    <span class="hide-options-menu__item">
+                                        <input class="menu-item-input" id="hidePrice" type="checkbox">
+                                        <label>Hide Valuation price</label>
+                                    </span>
+
+                                    <span class="hide-options-menu__item">
+                                        <label class="hideElements" data-serial="{{ doc.report_id or '' }}"
+                                            data-lang="en">Apply<i class="arrow--white bg-cover"></i></label>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <a href="#" id="sendSms" data-id="{{ doc.report_id or '' }}"><span
+                                    class="report-header-actions__downlaod header-sms bg-cover"></span></a>
+
+                            <a href="#" id="downloadReport"><span
+                                    class="report-header-actions__downlaod header-download bg-cover download-report"
+                                    data-serial="{{ doc.report_id or '' }}" data-link="/{{ doc.route | e }}"></span></a>
+                            <span id="js-reportMenu-trigger" class="report-header-actions__burgerMenu bg-cover"></span>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--======Burger Menu Content Block======-->
+        <div class="burger-menu-overlay" id="js-reportenu-wrapper">
+            <div class="burger-menu-content" id="js-report-menu-content">
+                <!--Burger Menu Header-->
+                <div class="report-burgerMenu-header">
+                    <div class="report-burgerMenu-action">
+                        <span class="report-burgerMenu-action__logo bg-cover"></span>
+                        <span id="js-reportMenu-close" class="close-icon bg-cover"></span>
+                    </div>
+                    <div class="report-burgerMenu-info">
+                        <div class="report-about--top">
+                            <div class="report-about--top__details">
+
+                                <p class="number">
+                                    Report ID
+
+                                    <span class="number-value">{{ doc.report_id or '' }}</span>
+
+                                </p>
+                            </div>
+                            <div class="report-about--top__qr">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="report-butgerMenu-body">
+                    <nav class="report-mainNav">
+                        <ul class="report-mainMenu-list">
+                            <li class="report-mainMenu-list__item"><a href="#history-usa">Vehicle history in South Korea
+                                    <span class="country-flag bg-cover"
+                                        style="background-image: url(/assets/carseer/images/imgs/Flags/South Korea.png);"></span></a>
+                            </li>
+                            <li class="report-mainMenu-list__item">
+                                <a href="#other-info">Other vehicle information </a>
+                                <ul class="report-inner-mainMenu">
+                                    <li class="report-inner-mainMenu__item"><a href="#rating">Vehicle Assessment</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="download-reprot-burgerMenu">
+                        <!--<span class="download-reprot-burgerMenu__icon bg-cover"></span>-->
+                    </div>
+
+                    <!--Download App links-->
+                    <div class="download-menu-block">
+                        <h3 class="download-menu-block__title small-text">Download App</h3>
+                        <div class="download-menu-list">
+                            <a href="https://apps.apple.com/jo/app/carseer-%D8%AA%D9%82%D8%B1%D9%8A%D8%B1-%D9%83%D8%A7%D8%B1%D8%B3%D9%8A%D8%B1/id1226567967"
+                                class="download-menu-list__link apple-store bg-cover" target="_blank"></a>
+                            <a href="https://play.google.com/store/apps/details?id=com.carseer.app&amp;hl=ar"
+                                class="download-menu-list__link google-play-icon bg-cover" target="_blank"></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <section class="report-intro-section">
+            <div class="report-intro">
+                <div class="report-container">
+                    <div class="report-intro-info">
+                        <ul class="c-intro-infos">
+                            <li class="c-intro-infos__item">
+                                <p class="title small-text">Vehicle</p>
+                                <p class="body medium-text">
+                                    <span class="veh-info">{{ doc.vechicle or '' }}</span>
+                                </p>
+                            </li>
+                            <li class="c-intro-infos__item">
+                                <p class="title small-text">Report Date</p>
+                                <p class="body medium-text" style="padding-top: 2px !important;">{{
+                                    doc.get_formatted('report_date') }}</p>
+                            </li>
+                            <li class="c-intro-infos__item">
+                                <p class="title small-text">VIN</p>
+                                <p class="body medium-text" style="padding-top: 2px !important;">{{ doc.vin or '' }}</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="report-intro__image no-image">
+                        <img src="/assets/carseer/images/imgs/car-image-mockup.png" alt="car mockup">
+                    </div>
+                </div>
+            </div>
+
+            <div class="top-rating-wrapper">
+                <div class="report-container">
+                    <div class="car-rating">
+                        <h3 class="car-rating__title medium-text"><a href="#rating">Vehicle Assessment</a></h3>
+                        {% set final_rating = (doc.vehicle_assessment or 0) | int %}
+                        <ul class="rating-stars">
+                            {% for i in range(0, 5) %}
+                            <li class="rating-stars__item {% if i < final_rating %}star-filled{% endif %} bg-cover">
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="other-info" class="report-section linked-block">
+            <div class="report-section__header large-text">
+                <div class="report-container">
+                    <h2 class="report-section-header-title">Other vehicle information</h2>
+                </div>
+            </div>
+            <div class="report-container">
+                <div id="rating" class="report-section__block linked-block">
+                    <h2 class="report-section-block-title large-text"><span class="title-icon bg-cover"
+                            style="background-image: url(/assets/carseer/images/assets/report-icons/star.svg)"></span>This
+                        Vehicle Assessment</h2>
+                    <div class="detailed-rating-block">
+                        <div class="detailed-rating-list">
+                            <div class="detailed-rating-list__item">
+                                <div class="car-rating">
+                                    <h3 class="car-rating__title medium-text">Issues</h3>
+                                    {% set issues = (doc.issues or 0) | int %}
+                                    <ul class="rating-stars">
+                                        {% for i in range(0, 5) %}
+                                        <li
+                                            class="rating-stars__item {% if i < issues %}star-filled{% endif %} bg-cover">
+                                        </li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="detailed-rating-list__item">
+                                <div class="car-rating">
+                                    <h3 class="car-rating__title medium-text">Ownership</h3>
+                                    {% set ownership = (doc.ownership or 0) | int %}
+                                    <ul class="rating-stars">
+                                        {% for i in range(0, 5) %}
+                                        <li
+                                            class="rating-stars__item {% if i < ownership %}star-filled{% endif %} bg-cover">
+                                        </li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="detailed-rating-list__item">
+                                <div class="car-rating">
+                                    <h3 class="car-rating__title medium-text">Odometer</h3>
+                                    {% set odometer = (doc.odometer or 0) | int %}
+                                    <ul class="rating-stars">
+                                        {% for i in range(0, 5) %}
+                                        <li
+                                            class="rating-stars__item {% if i < odometer %}star-filled{% endif %} bg-cover">
+                                        </li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="detailed-rating-list__item">
+                                <div class="car-rating">
+                                    <h3 class="car-rating__title medium-text">Others</h3>
+                                    {% set others = (doc.others or 0) | int %}
+                                    <ul class="rating-stars">
+                                        {% for i in range(0, 5) %}
+                                        <li
+                                            class="rating-stars__item {% if i < others %}star-filled{% endif %} bg-cover">
+                                        </li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="final-rating-block">
+                            <div class="car-rating">
+                                <h3 class="car-rating__title medium-text">Vehicle Assessment</h3>
+                                <ul class="rating-stars">
+                                    {% for i in range(0, 5) %}
+                                    <li
+                                        class="rating-stars__item {% if i < final_rating %}star-filled{% endif %} bg-cover">
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="report-section report-section--bottom">
+            <div class="report-container">
+                <!--============Terminology BLock===============-->
+                <div class="terminologt-block">
+                    <h3 class="terminologt-block__title large-text">Glossary</h3>
+                    <div class="terminologt-block__body xmedium-text">
+                        <p class="text-justify"><strong class="bold">Ownership/Registration: </strong>
+                            Vehicle registration is a standared procedure worlwide to use vehicle legally. Checking
+                            vehicle's historical ownership records is important in the proper assessment of the used
+                            vehicle. Experts prefer as few former owners as possible, but some cases are an exception to
+                            this rule.
+                        </p>
+                        <p class="text-justify"><strong class="bold">Recalls: </strong>
+                            Recalls can be iniated by manufacturer or the parties who administer traffic safety. This is
+                            to inform owners of vehicle regarding defects or safety improvements were suggested, and in
+                            most cases it cost nothing at owners.</p>
+                        <p class="text-justify"><strong class="bold">Data may be updated: </strong>
+                            The CARSEER report sources for obtaining used vehicle records are reliable. However, new
+                            records may be added to the vehicle after extracting its report due to reasons for delaying
+                            transactions from the source. CARSEER alerts users of most of these cases to protect them
+                            from any misleading information or importing cars that are not allowed to be registered
+                            according to local market regulations.</p>
+
+                    </div>
+                </div>
+                <!--end of Terminology Block===============-->
+                <!--============REPORT-ABOUT-CARSEER===============-->
+                <div class="report-small-footer">
+                    <div class="report-small-footer__top">
+                        <div class="report-about-main">
+                            <a href="/" class="report-about-main__logo bg-cover"></a>
+                            <h3 class="report-about-main__title medium-text">CARSEER Vehicle History Report</h3>
+                            <p class="report-about-main__body small-text">Copyright © 2025, 01 Inventions Ltd. All
+                                Rights Reserved</p>
+                        </div>
+                        <div class="report-about-QR">
+                            <div class="report-about-QR__intro small-text">Scan QR to verify the Report<span
+                                    class="link-arrow bg-cover"></span></div>
+                            <div class="report-about-QR__code">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="report-small-footer__bottom">
+                        <div class="small-footer-bottom-wrapper medium-text">
+                            <div class="donwload-report">
+                                <span class="donwload-report__icon bg-cover download-report"
+                                    data-serial="{{ doc.report_id or '' }}" data-link="/{{ doc.route | e }}"></span>
+
+                            </div>
+                            <div class="donwload-report">
+
+
+
+                                <a href="#" id="printReport" onclick="window.print()"><span
+                                        class="footer-print bg-cover"></span></a>
+                            </div>
+                            <div class="report-num">
+
+                                <span class="report-num__title">Report ID</span>
+                                <input type="text" value="{{ doc.report_id or '' }} "
+                                    class="report-num__value js-reportNum" readonly="readonly">
+                                <span class="report-num__copy bg-cover js-copy-report-num"></span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end of REPORT-ABOUT-CARSEERk===============-->
+                <div class="terminologt-block">
+
+
+                    <div class="terminologt-block__body xsmall-text text-justify">
+                        <p>
+                            Information Report
+                            Information used in compiling Carseer report is collected from a variety of government
+                            parastatal and trusted data sources. The correctness and reliability of the information
+                            supplied depend on our reporting sources involved in compiling Carseer report. Nevertheless,
+                            Carseer is committed to use its best efforts to report the information from its sources "as
+                            is" and without any liability for any human errors in the preparation of any information in
+                            its primary sources. We also recommend inspecting the vehicle with a specialist to verify
+                            the vehicle's technical reality. In using Carseer vehicle history report, you did accept to
+                            abide by all our Terms and Conditions of Use and it's subject to change.
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="report-footer">
+        <div class="report-container">
+            <div class="report-footer-wrapper">
+                <div class="report-footer-info xmedium-text">
+                    <p class="report-footer-info__title">HAVE QUESTIONS?</p>
+                    <div class="report-footer-info__body">
+                        <span dir="ltr">+962.6.586.0880</span>
+                        <a
+                            href="mailto:support@carseer.com?Subject=Report {{ doc.report_id or '' }}">support@carseer.com</a>
+                    </div>
+                </div>
+                <div class="report-footer-logo bg-cover"></div>
+            </div>
+        </div>
+    </footer>
+    <div class="page-loading hide">
+        <div class="page-loader">
+        </div>
+    </div>
+    <!--======MSG MODAL SCREEN========-->
+    <div id="js-modal-msg3" class="modal-wrapper js-modal-wrapper">
+        <div class="modal-wrapper__container">
+            <div class="modal-content-block modal-content-block--msg">
+                <span data-target="msg3" class="close-modal-icon js-modal-close bg-cover"></span>
+                <div class="modal-content-block__image bg-cover action-icon" style="background-size:contain"></div>
+                <h3 class="modal-content-block__title medium-text action-title"></h3>
+
+                <p class="modal-content-block__desc action-description"></p>
+                <div class="c-form-fields-wrapper">
+                    <div class="c-form-fields">
+                        <div>
+                            <input type="text" class="payment-form-field__input phone-num medium-text send-to"
+                                placeholder="07XXXXXXXX" required="">
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-btns medium-text">
+                    <button class="popup-btn popup-btn--filled action-btn" data-id="{{ doc.report_id or '' }}"></button>
+                    <button data-target="msg3" class="popup-btn popup-btn--stroke js-modal-close close-btn"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end of MSG MODAL SCREEN=======--> <!--======MSG MODAL SCREEN========-->
+    <div id="js-modal-msg2" class="modal-wrapper js-modal-wrapper">
+        <div class="modal-wrapper__container">
+            <div class="modal-content-block modal-content-block--msg">
+                <span data-target="msg2" class="close-modal-icon js-modal-close bg-cover"></span>
+                <div class="modal-content-block__image bg-cover action-icon" style="background-size:contain"></div>
+                <h3 class="modal-content-block__title medium-text action-title"></h3>
+
+                <p class="modal-content-block__desc action-description"></p>
+
+                <div class="popup-btns medium-text">
+                    <button class="popup-btn popup-btn--filled action-btn"></button>
+                    <button data-target="msg2" class="popup-btn popup-btn--stroke js-modal-close close-btn"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end of MSG MODAL SCREEN=======--> <!--======EVALUATION MODAL VERFIED DEALER SCREEN 1========-->
+    <link href="/assets/carseer/styles/css/select2.min.css" rel="stylesheet">
+    <style>
+        .store-buttons-container {
+            display: flex;
+            justify-content: center;
+            width: 50%;
+            justify-self: center !important;
+            margin-top: 25px
+        }
+
+        .store-buttons-container a {
+            width: 45px;
+            height: 45px;
+            margin: 2px;
+        }
+
+        .modal-content-padding {
+            padding: 41px 77px 38px 77px;
+            min-width: 43%;
+            max-width: 100%;
+        }
+
+        .download-app-button {
+            padding: 12px 24px;
+            width: auto !important;
+            height: auto !important;
+            background-color: #f93;
+            margin: auto !important;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            background-repeat: no-repeat;
+            background-position: left center;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+    </style>
+
+
+    <div id="js-modal-evalutaion1" class="modal-wrapper js-modal-wrapper">
+        <div class="modal-wrapper__container">
+            <div class="modal-content-block modal-content-block--evaluation modal-content-padding">
+                <span data-target="evalutaion1" class="close-modal-icon js-modal-close bg-cover"></span>
+                <div class="modal-content-block__image bg-cover"
+                    style="background-image: url(/assets/carseer/images/assets/evaluation-phone-icon.svg)"></div>
+                <h3 class="modal-content-block__title medium-text">FREE VALUATION</h3>
+                <input hidden="" id="ev-user-id" value="-1">
+                <h3 class="modal-content-block__title small-text">The evaluation service is only available through the
+                    app.</h3>
+                <div class="store-buttons-container">
+                    <a href="/app" class="download-app-button">
+                        Download App
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="js-modal-evalutaion2" class="modal-wrapper js-modal-wrapper">
+        <div class="modal-wrapper__container">
+            <div
+                class="modal-content-block modal-content-block--evaluation modal-content-block--evaluation-form modal-content-block--evaluation-sent">
+                <span data-target="evalutaion2" class="close-modal-icon js-modal-close bg-cover"></span>
+                <div class="modal-content-block__image bg-cover"
+                    style="background-image: url(/assets/carseer/images/assets/evaluation-cloud-icon.svg);"></div>
+                <h3 class="modal-content-block__title medium-text">Your request has been sent</h3>
+                <p class="modal-content-block__desc">You will receive a message on WhatsApp requesting to send a video
+                    of the vehicle</p>
+                <div class="popup-btns medium-text">
+                    <button class="popup-btn popup-btn--filled popup-btn--full btn-back-popup">Back</button>
+                </div>
+            </div>
+        </div>
+    </div> <!--======EVALUATION MODAL SCREEN 4========-->
+    <div id="js-modal-evalutaion4" class="modal-wrapper js-modal-wrapper">
+        <div class="modal-wrapper__container">
+            <div class="modal-content-block modal-content-block--evaluation modal-content-block--evaluation-form">
+                <span data-target="evalutaion4" class="close-modal-icon js-modal-close bg-cover"></span>
+                <div class="modal-content-block__image bg-cover"
+                    style="background-image: url(/assets/carseer/images/assets/evaluation-phone-icon.svg)"></div>
+                <h3 class="modal-content-block__title medium-text">Valuation is not available for shared reports</h3>
+                <h3>
+                </h3>
+            </div>
+        </div>
+    </div>
+    <!--end of EVALUATION MODAL SCREEN 4=======-->
+    <div id="js-modal-evalutaion3" class="modal-wrapper js-modal-wrapper">
+        <div class="modal-wrapper__container">
+            <div class="modal-content-block modal-content-block--evaluation modal-content-block--evaluation-form">
+                <span data-target="evalutaion3" class="close-modal-icon js-modal-close bg-cover"></span>
+                <div class="modal-content-block__image bg-cover"
+                    style="        background-image: url(/assets/carseer/images/information.svg); background-size: auto;">
+                </div>
+                <h3 class="modal-content-block__title medium-text">This vehicle cannot be evaluated</h3>
+                <p class="modal-content-block__desc error-msg"></p>
+                <div class="popup-btns medium-text">
+                    <button class="popup-btn popup-btn--filled popup-btn--full btn-back-popup">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end of REPORT FOOTER======================================\==================================================================-->
+    <!--assest JS-->
+    <script src="/assets/carseer/scripts/main.min.js"></script>
+    <script src="/assets/carseer/scripts/modal.min.js"></script>
+
+
+    <script src="/assets/carseer/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/assets/carseer/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/carseer/lib/jquery.unobtrusive-ajax.min/jquery.unobtrusive-ajax.min.js"></script>
+
+    <script src="/assets/carseer/lib/toastr.js/toastr.min.js"></script>
+    <script src="/assets/carseer/lib/datepicker/datepicker.min.js"></script>
+    <script src="/assets/carseer/scripts/accordion.js"></script>
+    <script>
+        var datepickerLang = "en-US";
+    </script>
+    <script src="/assets/carseer/lib/datepicker/i18n/datepicker.en-US.js"></script>
+    <script src="/assets/carseer/scripts/js/Common/Localization/localization-en.js"></script>
+    <script src="/assets/carseer/scripts/js/site.min.js"></script>
+    <script src="/assets/carseer/scripts/js/Common/common-service.js"></script>
+    <script src="/assets/carseer/scripts/js/Common/common-controller.js"></script>
+    <script src="/assets/carseer/scripts/js/Common/common.js"></script>
+    <script src="/assets/carseer/scripts/js/Enum/query-enums.js"></script>
+    <script src="/assets/carseer/lib/animation-lottie-2/scripts/lottie.min.js"></script>
+    <script src="/assets/carseer/lib/animation-lottie-2/scripts/animation.min.js"></script>
+
+    <!---Report Animation-->
+    <script src="/assets/carseer/lib/report-animation/scripts/lottie.min.js"></script>
+    <script src="/assets/carseer/lib/report-animation/scripts/animation.min.js"></script>
+
+
+    <!-- Script Localization -->
+
+
+    <script>
+        var noRecordsFound = "Sorry, no records found for this VIN";
+        var successMessage = "Operation Was Done Sucessfully";
+        var errorMessage = "The operation could not be completed"
+
+    </script>
+
+
+    <script src="/assets/carseer/lib/easy_number/easy-number-separator.js"></script>
+    <script src="/assets/carseer/lib/select2.min.js"></script>
+    <script>
+        var locSucc = "valuation request sent successfully";
+        var locPending = "Valuation in process";
+        var lang = "en-US"
+    </script>
+    <!--jQuery UI-->
+    <script src="/assets/carseer/lib/jqueryui/jquery-ui.js"></script>
+    <!--Floating Script -->
+    <script src="/assets/carseer/lib/materialize/js/materialize.js"></script>
+    <!--Chart js-->
+    <script src="/assets/carseer/lib/Chart.js/Chart.min.js"></script>
+    <!-- Main Script -Cus -->
+    <script src="/assets/carseer/scripts/js/Report/Main/service.js"></script>
+    <script src="/assets/carseer/scripts/js/Report/Main/controller.js"></script>
+    <script src="/assets/carseer/scripts/js/Report/Main/main.js"></script>
+
+    <script src="/assets/carseer/lib/html2pdf.js/html2pdf.bundle.min.js"></script>
+    <script src="/assets/carseer/scripts/venobox.min.js"></script>
+    <script src="/assets/carseer/scripts/report-main.js"></script>
+    <script src="/assets/carseer/scripts/copy-clip.js"></script>
+    <script src="/assets/carseer/scripts/modal.js"></script>
+
+
+
+    <script>
+        var urlVars = getUrlVars();
+        urlParams = [];
+        if (window.location.href.indexOf('?') != -1) {
+            urlParams = window.location.href.slice(window.location.href.indexOf('?') + 1).toLowerCase().split('&');
+        }
+        var odometerReading;
+        if ($("#OdometerReading").val() != "") {
+            odometerReading = JSON.parse($("#OdometerReading").val());
+        }
+    </script>
+</body>
+
+</html>
+
+</html>

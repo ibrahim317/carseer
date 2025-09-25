@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="38px" viewBox="0 0 60 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>log</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.251624476 0.0996242973 46.4706315 0.0996242973 46.4706315 23.8101237 0.251624476 23.8101237"></polygon>
+    </defs>
+    <g id="Report" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Final-Report" transform="translate(-1315.000000, -31.000000)">
+            <g id="log" transform="translate(1315.000000, 31.000000)">
+                <g id="Group-7" transform="translate(13.090909, 0.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-6"></g>
+                    <path d="M35.208086,14.6019624 L21.7068483,14.5794532 L36.1397853,0.12100809 L23.2266944,0.0984988345 L0.251624476,23.7332171 L35.193149,23.7876144 C35.2398273,23.7876144 35.2734357,23.7894902 35.3145126,23.791366 L46.4706315,23.8101237 C45.761121,17.6932335 42.0156524,14.6132171 35.208086,14.6019624" id="Fill-5" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                </g>
+                <path d="M52.7639273,28.251172 L44.3143872,28.2362143 L25.6209455,28.2062989 L14.8846203,28.1876017 L8.9997861,28.1782531 L0,37.3099457 L4.78247701,37.3174246 L5.0025754,37.3192943 L17.0557604,37.3379914 L35.3780193,37.3697766 L44.1987422,37.3847343 L48.1828963,37.3903743 C54.9611807,37.4015618 58.7121797,34.3539248 59.4545455,28.2679995 L59.4545455,28.2623903 L52.7639273,28.251172 Z" id="Fill-15" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

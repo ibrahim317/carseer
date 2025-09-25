@@ -1,0 +1,1667 @@
+.chartjs-size-monitor {
+    display: none;
+}
+
+.price-range {
+}
+
+.c-find-price {
+    margin-top: 24px;
+}
+
+span.acc-count {
+    color: red;
+    font-family: "din-bold";
+    /* width: 52px; */
+}
+
+.efwatercom-direct-icon {
+    background-image: url(../assets/images/assets/payment-methods/efwatercom_pay.svg);
+    background-size: contain !important;
+}
+/*05/22/2022*/
+.invoice-header-actions__excel {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    vertical-align: middle;
+    background-image: url(/assets/carseer/images/imgs/Icons/extract-excel.svg);
+    cursor: pointer;
+    margin-right: 20px;
+}
+/*05/15/2021*/
+.article-intro__image {
+    height: 420px;
+}
+
+.mascut-icon {
+    background-image: url(../assets/carseer/images/imgs/Icons/mascut.svg);
+}
+
+.offer-card-list {
+    font-size: 16px;
+}
+
+.btn-link {
+    color: #ff9933;
+    text-decoration: underline;
+    font-family: 'din-reg';
+    font-size: 16px;
+    position: relative;
+    top: 10px;
+}
+
+.offer_curr {
+    text-align: center;
+    font-family: 'din-reg';
+    color: #898989;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.offer-card__price {
+    font-size: 28px;
+}
+
+.offers-list__item {
+    margin-bottom: 21px;
+}
+
+ul.offer-card-list.xsmall-text li:before {
+    content: "\2022";
+    display: inline-block;
+    color: #ff9933;
+    /* font-size: 28px; */
+    width: 8px;
+}
+
+.offer-card__icon {
+    width: 86px;
+    height: 78px;
+    display: block;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#counter {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    background: #ababab;
+    font-weight: bold;
+    display: inline-block;
+    padding-top: 4px;
+    font-size: 11px;
+}
+
+a.resend.hide.btn-link {
+    text-decoration: underline;
+    color: #f93;
+}
+
+.success-bg {
+    background: url(../assets/carseer/images/imgs/circle-check-solid_green.svg) !important;
+    background-size: cover !important;
+    width: 120px !important;
+    height: 120px !important;
+    margin: auto !important;
+}
+
+.success-text {
+    font-family: "DIN-REG";
+    text-align: center;
+    margin-top: 15px;
+    margin-top: 30px;
+}
+
+.recharge-btn {
+    display: flex;
+    justify-content: center;
+    display: block
+}
+
+    .recharge-btn i.arrow--white.bg-cover {
+        width: 15px;
+        height: 15px;
+        /* background-position-y: 4px; */
+        margin-top: 10px;
+        /* background-position-x: -1px; */
+        position: absolute;
+        right: 13px;
+        top: 10px;
+    }
+
+li.mainMenu-list__item:before {
+    display: none;
+}
+
+li.download-menu-block__title.small-text:before {
+    display: none;
+}
+/**12/15/2021**/
+/*--Common--*/
+.full-background-img {
+    width: 350px !important;
+    height: 350px !important;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.subtitle {
+    font-family: 'din-reg';
+    color: #7c7c7c;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+/*------Stats-----*/
+
+.car-specs-block__info.spreading_stats h4 {
+    margin-top: 5px;
+}
+
+.car-specs-block__info.gender_stats h4 {
+    margin-top: 5px;
+}
+
+.car-specs-block__info.age_cat h4 {
+    margin-top: 5px;
+}
+
+.general-stats-svg {
+    margin-top: -8px;
+    margin-bottom: 11px;
+}
+
+.car-specs-block__info.spreading_stats img {
+    top: -14px;
+    position: relative;
+}
+
+.car-specs-block__info.spreading_stats .spreading {
+    position: absolute;
+    top: 15%;
+    right: 40%;
+}
+
+.car-specs-block__info.age_cat .age {
+    position: absolute;
+    top: 15%;
+    right: 40%;
+}
+
+.male {
+    /*    left: 40px;
+    position: absolute;*/
+    width: 50%;
+}
+
+
+.female {
+    /* right: 27px;
+    position: absolute;*/
+    width: 50%;
+    float: right;
+    text-align: right;
+    padding-right: 22px;
+}
+/*.male {
+    left: 40px;
+    position: absolute;
+}
+
+
+.female {
+    right: 27px;
+    position: absolute;
+}*/
+
+.gender_stats {
+}
+
+    .gender_stats p.desc {
+        position: absolute;
+        top: 15%;
+    }
+
+.report-grid__item--33 {
+    width: 33.333%;
+}
+/**End of 12/15/2021*/
+
+.scroll-event {
+    cursor: pointer !important;
+}
+
+span.guide-step-block__text.report-step {
+    font-weight: bold !important;
+    letter-spacing: 4px !important;
+    color: #f93 !important;
+    font-size: 20px !important;
+}
+
+.mobile-view {
+    display: none;
+}
+
+.offer-img {
+    width: 100%;
+    margin-top: 15px;
+}
+
+button.promocode-field__btn.loading-btn {
+    opacity: 0.5;
+}
+
+a.download-menu-list__link.app-gallery-sidebar-icon.bg-cover {
+    /* margin-left: -12px; */
+    position: relative;
+    position: relative;
+    right: 4px;
+}
+
+.app-gallery-sidebar-icon {
+    background: url(/assets/carseer/images/imgs/Icons/AppGallery.svg);
+}
+
+.table-col-block__image {
+    margin-top: 0px;
+}
+
+.offer {
+    text-decoration: line-through;
+}
+
+.table-intro__title .desc {
+    color: #c7c7c7;
+}
+
+.jordan-event {
+    POSITION: ABSOLUTE;
+    Z-INDEX: -1;
+    LEFT: 12px;
+    TOP: -53px;
+    display: none;
+}
+
+.table-row {
+    padding-right: 15px;
+}
+
+.history-table-block div.table div.table-row .table-row__cel:nth-child(2) {
+    width: 20%;
+    padding-left: 0;
+}
+
+.history-table-block {
+    padding: 0;
+}
+
+.table {
+    width: 90%;
+    padding-left: 0;
+    font-family: 'din-reg', sans-serif;
+}
+
+.table-row--mobile {
+    border: none !important;
+}
+
+    .table-row--mobile:nth-child(2n) {
+        background: #f6f6f6;
+        /* border: none; */
+    }
+
+.report-small-footer {
+    page-break-inside: avoid;
+}
+
+.ship-block {
+    background-color: transparent;
+}
+
+
+
+.tables-list__item:not(:first-child) {
+    margin-top: 16px !important;
+}
+
+.table-row:not(:last-child) {
+    border-bottom: 0px !important;
+}
+
+.table-row:nth-child(2n) {
+    background: #f1f1f1;
+    padding-top: 10px;
+}
+
+.chart-container {
+    height: 212px;
+}
+
+.rep-info-error {
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    display: block;
+    display: inline-block;
+    text-align: left;
+    margin-top: 14px;
+}
+
+.header-title .header-download {
+    background-size: auto;
+}
+
+.din-font {
+    font-family: 'din-bold'
+}
+
+a.old-website {
+    font-family: 'din-bold'
+}
+
+a.old-website {
+    position: absolute;
+    left: 122PX;
+    TOP: 23PX;
+}
+
+.review-block {
+    margin-bottom: 15px;
+}
+
+p.review {
+    font-family: 'din-reg', sans-serif;
+    text-align: justify;
+    /* padding: 2px; */
+    padding-right: 39px;
+    line-height: 28px;
+    padding-bottom: 21px;
+    padding-top: 13px;
+    color: #565656;
+}
+
+.history-table-block div.table div.table-row .table-row__cel:nth-child(3) {
+    /* background: red !important; */
+    width: 70%;
+    padding-left: 0;
+}
+
+.r-app-icon {
+    background: url(../assets/carseer/images/imgs/Icons/report-icons/car-worked-apps.svg)
+}
+
+.r-engine-change-icon {
+    background: url(../assets/carseer/images/imgs/Icons/report-icons/change-engine.svg)
+}
+
+.r-maintenance-icon {
+    background: url(../assets/carseer/images/imgs/Icons/report-icons/maintenance.svg)
+}
+
+.r-ansuurance-icon {
+    background: url(../assets/carseer/images/imgs/Icons/report-icons/ansuurance.svg)
+}
+
+.r-airbag-icon {
+    background: url(../assets/carseer/images/imgs/Icons/report-icons/airbag.svg)
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.header-print {
+    background: url(/assets/carseer/images/imgs/Icons/print.svg);
+    background-repeat: no-repeat;
+    background-position-y: 5px;
+}
+
+.header-sms {
+    background: url(/assets/carseer/images/imgs/Icons/sms.svg);
+    background-repeat: no-repeat;
+}
+
+.header-eye {
+    background: url(/assets/carseer/images/imgs/Icons/eye.svg);
+    background-repeat: no-repeat;
+}
+
+.header-send-to-bank {
+    background: url(../assets/carseer/images/imgs/Icons/Send-to-bank.svg);
+    background-repeat: no-repeat;
+}
+
+.main-logo {
+    background-image: url(/assets/carseer/images/imgs/Logo/carseer-en.svg);
+}
+
+.js-language-toggle-trigger {
+    HEIGHT: 30PX;
+}
+
+input#VIN {
+    text-transform: uppercase;
+}
+
+.general-field__error {
+    color: red;
+    font-family: 'din-bold';
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 10px;
+}
+
+
+.general-field-flat__error {
+    color: #F19292 !important;
+    font-family: 'din-bold' !important;
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 10px;
+}
+
+.js-message {
+    display: none;
+}
+
+.js-message-active {
+    display: block;
+}
+
+.website-intro__slogan {
+    max-width: 335px !important;
+}
+
+.intro-from-field {
+}
+
+.display-block {
+    display: block !important;
+}
+
+.load-gif {
+    background: url(../assets/carseer/images/imgs/ajax-loader.gif) left no-repeat;
+    background-size: contain;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+a {
+    cursor: pointer !important;
+}
+
+.c-form-field__error {
+    font-family: 'din-bold', sans-serif;
+}
+
+.max_height_30 {
+    max-height: 30px;
+}
+
+.full-width {
+    width: 100% !important;
+}
+
+.toast-message {
+    font-family: 'din-bold' !important;
+    font-size: 16px;
+    padding: 10px;
+}
+/*.payment-form-field__error, .c-form-field__error {
+    position: absolute;
+}*/
+
+.hide {
+    display: none;
+}
+
+.general-back {
+    cursor: pointer !important;
+}
+
+.query-loading {
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 100
+}
+
+    .query-loading.hide {
+        display: none;
+    }
+
+.anim {
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+    top: 0;
+    /* width: 100%; */
+    /* top: 50%; */
+    bottom: 50%;
+    /* left: 50%; */
+    /* right: 50%; */
+    height: 100%;
+    max-height: 1000px;
+}
+
+.hide {
+    display: none;
+}
+
+.regestration-info .body .body__item:not(:first-child) {
+    margin-right: 32px !important;
+}
+
+.expired {
+    pointer-events: none;
+}
+
+    .expired .report-block {
+        background: rgba(0,0,0,0.1);
+    }
+
+.report-bg {
+    background: url(/assets/carseer/images/imgs/report-en.webp) !important;
+    background-size: cover !important;
+}
+
+.car-evaluation-info {
+    font-family: 'din-reg', sans-serif;
+    color: #737373;
+    max-width: 100%;
+    text-align: justify;
+}
+
+.flex-start {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: flex-start;
+    -webkit-box-align: flex-start;
+    -moz-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    -webkit-align-items: flex-start;
+}
+
+@page {
+    size: A4;
+    margin: 0;
+}
+
+@media print {
+    /*stats*/
+    .car-specs-block__info.age_cat h4 {
+        margin-top: 6px;
+    }
+
+    .car-specs-block__info.spreading_stats img {
+        top: -8px;
+        position: relative;
+    }
+
+    .report-grid__item--33 {
+        width: 240px !important;
+    }
+
+    .female {
+        right: 0
+    }
+
+    .male {
+        left: 0
+    }
+    /*end of stats*/
+    .desktop-view {
+        display: block !important;
+    }
+
+    .mobile-view {
+        display: none !important;
+    }
+
+    .report-histoy-card {
+        height: 140px;
+        padding: 15px 15px 10px 15px;
+    }
+
+    .jordan-event {
+        POSITION: ABSOLUTE;
+        Z-INDEX: -1;
+        LEFT: 1px;
+        TOP: -41px;
+        WIDTH: 130PX;
+        display: none;
+    }
+
+    .table-col-block__image svg {
+        display: block;
+        width: auto;
+        height: auto;
+        max-width: 70%;
+        max-height: 100%;
+        position: absolute;
+    }
+
+    .table-col-block__image img {
+        max-width: 70% !important;
+    }
+
+    .top-rating-wrapper {
+        background-color: #f6f6f6;
+        padding: 26px 0;
+    }
+
+    .report-page {
+        background-color: #fff;
+    }
+
+    .report-main-header-wrapper {
+        padding: 34px 0 26px 0px !important;
+    }
+
+    main {
+        background-color: #fff !important;
+    }
+
+    .table-row.table-row--header {
+        padding-bottom: 35px;
+    }
+
+    .user-body-content__body--grey {
+        background-color: #fff;
+    }
+
+    main {
+        padding-bottom: 0px !important;
+    }
+
+    .user-body-content__body {
+        padding-bottom: 0px !important;
+        padding-top: 0px !important;
+    }
+
+    .more-photos-link {
+        display: none;
+    }
+
+/*    .jfzic-btns {
+        display: none;
+    }*/
+
+    .history-owner-badge.free-stamp.free-report {
+        width: 240PX !IMPORTANT;
+        HEIGHT: 240PX !IMPORTANT;
+        right: 0;
+    }
+
+    p.noHistoy-card-info__title {
+        FONT-SIZE: 17PX;
+        LINE-HEIGHT: 24PX;
+    }
+
+    .no-regestration-block.small-text {
+        line-height: 16px;
+    }
+
+    .report-about-main__logo {
+        width: 100% !important;
+        height: 31PX !important;
+    }
+
+    .general-other-specs .report-general-info-wrapper {
+        padding-right: 0px;
+    }
+
+    .general-other-specs * .r-general-info-list__item {
+        max-width: 130px !important;
+        min-width: 130px !important;
+    }
+
+    .hide-print {
+        display: none;
+    }
+
+    .page-one {
+        height: 297mm;
+        position: relative;
+    }
+    /*    .first-page {
+        max-height: 306mm;
+        min-height: 306mm;
+    }*/
+    .evaluation-range__item:nth-child(2) {
+        left: 14px;
+    }
+
+    .evaluation-range__item {
+        position: relative;
+        width: 50%;
+        left: -13px;
+    }
+
+    .report-section--timeline .report-container {
+        border-left: 0px !important;
+    }
+
+    h3.terminologt-block__title.large-text {
+        font-size: 15px;
+    }
+
+    .terminologt-block__body {
+        line-height: 25px !important;
+    }
+
+    .table-col-block__desc {
+        line-height: 25px;
+    }
+
+    .report-section-header-title {
+        font-size: 15px;
+    }
+
+    .history-info-info-wrapper {
+        max-width: 600px !important;
+    }
+
+    .detailed-rating-block {
+        page-break-inside: avoid;
+    }
+
+    .table-row {
+        PAGE-BREAK-INSIDE: avoid;
+    }
+
+    .linked-block {
+        margin-top: 0PX;
+        border: 0PX;
+    }
+
+    .history-owner-badge {
+        width: 71px !important;
+        height: 100px !important;
+    }
+
+    .first_page_footer .report-footer {
+        padding-top: 15px;
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+        padding-bottom: 16px;
+    }
+
+    .car-specs-wrapper .report-card-block__state {
+        width: 30px;
+        height: 30px;
+    }
+
+    .report-card-block__state-svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .car-specs-block__icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .histroy-info__icon {
+        width: 38px !important;
+        height: 37px !important;
+    }
+
+    .r-general-info-list__item .title {
+        line-height: 22px;
+    }
+
+    .first_page_footer {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+    }
+
+    .report-about--top {
+        font-size: 12px !important;
+        line-height: 14px !important;
+        left: -60px;
+        position: relative;
+    }
+
+    .report-about--top__qr {
+        width: 60px !important;
+        height: 60px !important;
+        margin-right: 16px !important;
+        position: absolute;
+        left: 106px !important;
+        top: -10px;
+        left: -74px;
+    }
+
+    .show-print {
+        display: block !important;
+    }
+
+    /*    .relaitve {
+        position: relative;
+    }*/
+
+    .avoid-break {
+        page-break-inside: avoid !important;
+    }
+
+    .regestration-info .body .body__item:not(:first-child) {
+        margin-right: 32px !important;
+    }
+
+    .report-intro__image {
+        width: 300px;
+        height: 120px;
+        /*left: 16px;*/
+        top: -20px;
+        max-height: none;
+    }
+
+        .report-intro__image img {
+            width: 326px;
+            /* height: max-content; */
+            max-height: none;
+        }
+
+        .report-intro__image.no-image {
+            width: 326px;
+            /* height: 120px; */
+            /*left: 693px;*/
+            top: -35px;
+        }
+
+            .report-intro__image.no-image img {
+                width: 326px;
+                max-height: none;
+            }
+
+    .table-col-block__header-title {
+        font-size: 13px !important;
+    }
+
+    .small-text {
+        font-size: 11px !important;
+    }
+
+    .medium-text {
+        font-size: 12px !important;
+    }
+
+    .xmedium-text {
+        font-size: 13px !important;
+    }
+
+    .history-table-block div.table div.table-row .table-row__cel:nth-child(3) {
+        /* background: red !important; */
+        width: 80%;
+        text-align: justify;
+    }
+
+    .tables-list__item:not(:first-child) {
+        margin-top: 16px !important;
+    }
+}
+
+@keyframes scan {
+    0%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(210px);
+        transform: translateY(190px);
+    }
+}
+
+@-webkit-keyframes scan {
+    0%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(210px);
+        transform: translateY(240px);
+    }
+}
+
+
+.QrForm {
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.page-qr {
+    width: 200px;
+    height: 200px;
+    background: #ffffff;
+    margin: auto;
+    margin-top: 10%;
+    position: relative;
+}
+
+.QrLine {
+    width: 100%;
+    height: 10px;
+    background-color: rgba(244,0,0,.8);
+    position: absolute;
+    z-index: 9999;
+    -moz-animation: scan 5s infinite;
+    -webkit-animation: scan 5s infinite;
+    animation: scan 5s infinite;
+    -webkit-animation-direction: alternate-reverse;
+    box-shadow: 0px 0px 30px rgba(255,204,102,.5);
+}
+
+.table-col-block__image {
+    position: relative;
+}
+
+    .table-col-block__image svg {
+        display: block;
+        width: auto;
+        height: auto;
+        max-width: 50%;
+        max-height: 100%;
+        position: absolute;
+    }
+
+    .table-col-block__image img {
+        max-width: 50% !important;
+    }
+
+.selling-point-row {
+    margin-bottom: 15px;
+}
+
+    .selling-point-row .table-header-grid .table-header-grid__item {
+        max-width: 378px;
+        min-width: 378px;
+    }
+
+.free-stamp {
+    width: 240px !important;
+    height: 240px !important;
+    right: 0px;
+    /* background-size: contain; */
+    background-size: 180px !important;
+    overflow: visible;
+}
+
+.r-maintenance-records {
+    background-image: url(../assets/carseer/images/imgs/Icons/report-icons/maintenance.svg);
+}
+
+.r-info-icon {
+    background-image: url(../assets/carseer/images/imgs/Icons/Info.svg);
+}
+
+.no-data-sum {
+    width: 100%;
+}
+
+.general-other-specs * .r-general-info-list__item {
+    display: block;
+    /* background: red; */
+    justify-content: flex-start !important;
+    margin-left: 31px;
+    margin-bottom: 23px;
+    max-width: 150px;
+    min-width: 150px;
+}
+
+.general-other-specs * .r-general-info-list.small-text {
+    justify-content: end;
+}
+
+.footer-print {
+    background: url(/assets/carseer/images/imgs/Icons/print-black.svg);
+}
+
+.r-general-info-icon {
+    background-image: url(/assets/carseer/images/imgs/Icons/report-icons/general-info.svg);
+}
+
+
+.footer-print {
+    background: url(/assets/carseer/images/imgs/Icons/print-black.svg) !important;
+    background-size: cover;
+    background-position: center;
+    width: 27px;
+    height: 25px;
+    display: block;
+    margin-left: 16px;
+    background-repeat: no-repeat;
+    /* background: repeat-x; */
+    margin-top: 8px;
+}
+
+.report-about-main__logo.bg-cover {
+    background: url(../assets/carseer/images/imgs/Logo/carseer-en.svg) no-repeat;
+}
+
+.report-footer-logo.bg-cover {
+    background-image: url(/assets/carseer/images/imgs/Icons/carseer-black-en.svg);
+    width: 128px;
+    height: 32px;
+    float: right;
+}
+
+span.single-table-intro__duration {
+    font-size: 16px;
+}
+
+.no-margin-error {
+    margin-top: 0px;
+}
+
+.free-label {
+    position: absolute;
+    z-index: 49;
+    width: 50px;
+    font-size: 16px;
+    font-family: "din-bold";
+    color: #fff;
+    line-height: 10px;
+    padding-top: 6px;
+    padding-bottom: 10px;
+    right: 0;
+    top: 13px;
+    padding-left: 8px;
+    background: #f39c12;
+}
+
+.qr-reader {
+    height: 150px;
+    width: 317px;
+    margin: auto;
+    position: relative;
+    top: 30px;
+    left: 38px;
+}
+
+.page-qr {
+    background: url(../assets/images/report-qr-code.png);
+}
+
+ul.user-menu li {
+    cursor: pointer;
+}
+
+    ul.user-menu li a {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+    }
+
+        ul.user-menu li a:hover {
+            color: #FF9933;
+        }
+
+.header-user-menu {
+    cursor: pointer;
+}
+
+.burger-menu {
+    cursor: pointer;
+}
+
+.close-icon {
+    cursor: pointer;
+}
+
+.language-toggle {
+    cursor: pointer;
+}
+
+.entery-phone {
+    font-size: 12px;
+}
+
+.no-regestration-block {
+    TEXT-ALIGN: JUSTIFY;
+    LINE-HEIGHT: 35PX;
+}
+
+.table-col-block__desc,
+.desc,
+.r-general-info-list__item .title,
+.histroy-info__details .title,
+.text-block,
+.about-tabs-menu,
+.faq-block__answer,
+.regestration-info .title,
+.car-evaluation-info,
+.car-specs-block__info .desc {
+    color: #565656;
+}
+
+.r-change-title {
+    background: url(/assets/carseer/images/imgs/Icons/report-icons/change-title.svg);
+}
+
+.bg-cover {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.more-photos-link {
+    background: rgba(0,0,0,0.3);
+    color: #fff;
+    text-align: center;
+    padding-top: 52px;
+}
+
+    .more-photos-link:hover {
+        color: #ff9933;
+    }
+/* typical phone screen resolution */
+@media only screen and (max-width : 667px) {
+    .general-other-specs * .r-general-info-list__item {
+        margin-left: 0px;
+    }
+
+    a.report-about-main__logo.bg-cover {
+        background-size: cover;
+    }
+
+    .offers-list {
+        width: 90%;
+        margin: auto;
+    }
+
+    .full-background-img {
+        width: 450px !important;
+        height: 450px !important;
+    }
+    /*--12/15/2021--*/
+    /*--stats res--*/
+    .stats-li {
+        height: 154px;
+    }
+
+    .age_cat, .gender_stats, .spreading_stats {
+        max-width: 100%;
+        margin-right: 0px;
+    }
+
+
+    .report-card-block.stats_block * {
+        text-align: center;
+        display: inline-block;
+    }
+
+    .spreading_stats .title {
+        width: 100%;
+    }
+    /*--End of stats res --*/
+    /*-end of 12/15/2021-*/
+    .album-image-block {
+        height: 200px;
+    }
+
+    .jordan-event {
+        POSITION: ABSOLUTE;
+        Z-INDEX: -1;
+        LEFT: -33px;
+        TOP: -70px;
+        display: none;
+    }
+
+    .table-col-block__image svg {
+        display: block;
+        width: auto;
+        height: auto;
+        max-width: 80%;
+        max-height: 100%;
+        position: absolute;
+    }
+
+    .table-col-block__image img {
+        max-width: 80% !important;
+    }
+
+    .demonstration-video {
+        position: relative;
+    }
+
+    .demonstration-video__icon {
+        width: 34px;
+        height: 34px;
+        margin-right: 0px;
+        right: 66px;
+        position: absolute;
+    }
+
+    .selling-point-row .table-header-grid .table-header-grid__item {
+        max-width: 667px;
+        min-width: 0px;
+    }
+
+    p.review {
+        padding-left: 15px;
+    }
+
+    .table-col-block__title.error-state:before {
+        left: auto;
+        /* position: absolute; */
+        right: 0px !important;
+    }
+}
+/* landscape orientation */
+@media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : landscape) {
+
+    .demonstration-video {
+        position: relative;
+    }
+
+    .demonstration-video__icon {
+        width: 34px;
+        height: 34px;
+        margin-right: 0px;
+        right: 66px;
+        position: absolute;
+    }
+
+    .footer-print {
+        display: none;
+    }
+
+    .header-form-fields__btn .arrow--white {
+        transform: rotate(180deg) translateY(50%) !important;
+    }
+
+
+    .main-logo {
+        background: url(/assets/images/assets/logo/main-logo--mobile.svg) !important
+    }
+
+    #vin-bar .header-form-fields .header-form-fields__btn.small-text {
+        font-size: 13px !important;
+    }
+
+    .selling-point-row .table-header-grid .table-header-grid__item {
+        max-width: 667px;
+        min-width: 0px;
+    }
+
+    p.review {
+        padding-left: 15px;
+    }
+
+    .table-col-block__title.error-state:before {
+        left: auto;
+        /* position: absolute; */
+        right: 0px !important;
+    }
+}
+
+@media (min-width : 320px) and (max-width : 667px) {
+    .offer-card__title {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .offer-card__price, .offer-card__oldPrice {
+        text-align: center;
+    }
+
+        .offer-card__oldPrice:after {
+            left: auto;
+            right: auto;
+            transform: translateX(-80%);
+        }
+
+    .report-grid__item--33 {
+        width: 100%;
+    }
+
+    .desktop-view {
+        display: none;
+    }
+
+    .mobile-view {
+        display: block;
+    }
+    .article-intro__image {
+        height: 210px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    } 
+
+}
+/* portrait orientation */
+@media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : portrait) {
+    .desktop-view {
+        display: none;
+    }
+
+    .mobile-view {
+        display: block;
+    }
+
+    .table-col-block__title.error-state:before {
+        left: auto;
+        /* position: absolute; */
+        right: 0px !important;
+    }
+
+    p.review {
+        padding-left: 15px;
+    }
+
+    .demonstration-video {
+        position: relative;
+    }
+
+    .demonstration-video__icon {
+        width: 34px;
+        height: 34px;
+        margin-right: 0px;
+        right: 66px;
+        position: absolute;
+    }
+
+    .footer-print {
+        display: none;
+    }
+
+    .header-form-fields__btn .arrow--white {
+        transform: rotate(180deg) translateY(50%) !important;
+    }
+
+    .main-logo {
+        background: url(/assets/images/assets/logo/main-logo--mobile.svg) no-repeat !important
+    }
+
+    #vin-bar .header-form-fields .header-form-fields__btn.small-text {
+        font-size: 13px !important;
+    }
+
+    .selling-point-row .table-header-grid .table-header-grid__item {
+        max-width: 667px;
+        min-width: 0px;
+    }
+}
+
+/*added by Momen*/
+.footer-menu__item a {
+    font-size: 16px;
+}
+
+.footer-sub-menu__link {
+    font-size: 15px;
+}
+
+
+
+
+
+@media screen and (max-width: 510px) {
+    .xmedium-text, .medium-text {
+        font-size: 16px !important;
+    }
+
+    .large-text {
+        font-size: 20px !important;
+    }
+
+    .report-page .medium-text {
+        font-size: 16px !important;
+    }
+
+    .report-page .small-text {
+        font-size: 14px !important;
+        line-height: 20px !important;
+    }
+
+    .price-range-value__title {
+        font-size: 13px !important;
+    }
+
+    .xxsmall-text {
+        font-size: 14px !important;
+    }
+
+    .price-range-value__num {
+        padding-top: 4px !important;
+    }
+
+    .section-header {
+        font-size: 18px !important;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .chassis-info__title {
+        font-size: 16px !important;
+    }
+
+    .chassis-info__desc {
+        font-size: 14px !important;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .small-text {
+        font-size: 16px !important;
+    }
+
+    .terminologt-block__body {
+        font-size: 14px !important;
+    }
+
+    .xsmall-text {
+        font-size: 14px !important;
+    }
+
+
+    .header-form-fields__btn {
+        width: 102px !important;
+    }
+
+    .header-form-fields__btn {
+        font-size: 11px !important;
+    }
+
+    .header-form-fields__btn {
+        right: 17px !important;
+        top: 7% !important;
+    }
+
+        .header-form-fields__btn .arrow--white {
+            right: 6px !important;
+            top: 22% !important;
+        }
+
+    .arrow--white {
+        transform: rotate(180deg) !important;
+    }
+
+    .header-form-fields__input {
+        font-size: 12px !important;
+    }
+}
+/* portrait orientation */
+@media screen and (max-width : 375px) {
+    .main-logo {
+        flex: 0 0 75px !important;
+        height: 30px !important;
+    }
+}
+
+.otpResend {
+    color: gray;
+    pointer-events: none;
+}
+
+.counter-block__link {
+    color: gray;
+    margin-top: 5px;
+    display: block;
+    font-family: "title-bold";
+}
+
+.counter-block__count {
+    color: #a9a9a9;
+    font-family: "title-reg";
+}
+
+
+element.style {
+    background-image: url(/assets/images/assets/buying-option-info-icons/local-data.png);
+}
+
+
+.data-feature-block--unavailable .data-feature-block__icon {
+    opacity: 0.30;
+}
+
+.bg-cover {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/*
+@media screen and (max-width: 1100px) {
+    .data-feature-block__icon {
+        width: 90px !important;
+        height: 70px !important;
+    }
+}*/
+@media screen and (max-width: 510px) {
+    .payment-report-type__title {
+        font-size: 17px !important;
+    }
+}
+
+.data-feature-block__icon {
+    width: 90px !important;
+    height: 70px !important;
+}
+
+.unavailable-text {
+    font-size: 16px !important;
+}
+
+.copyrights {
+    font-size: 13px !important;
+}
+
+#VIN {
+    font-family: sans-serif !important;
+}
+
+.mainMenu-nav {
+    font-size: 18px !important;
+    line-height: 26px !important;
+}
+
+.mainMenu-nav {
+    margin-top: 77px !important;
+}
+
+.vcode-input {
+    width: 60px !important;
+    border: 0 !important;
+    background-color: transparent !important;
+    border-bottom: 1px solid #979797 !important;
+    font-family: 'din-bold', sans-serif !important;
+    font-size: 30px !important;
+    text-align: center !important;
+    color: #999999 !important;
+}
+
+.otp-block {
+    direction: ltr !important;
+    text-align: center !important;
+    display: flex !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: -webkit-flex !important;
+    max-width: 425px !important;
+    -webkit-box-pack: justify !important;
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
+    color: #188b7f !important;
+}
+
+    .otp-block input {
+        display: block !important;
+        border: 0 !important;
+        width: 14% !important;
+        border-bottom: 1px solid #979797 !important;
+        text-align: center !important;
+        color: #188b7f !important;
+    }
+
+
+.btn-link {
+    color: #ff9933;
+    text-decoration: underline;
+}
+
+.partner-block__logo {
+    width: 150px;
+    height: 90px;
+    margin: 0px auto;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.invoice_header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.qr-image {
+    width: 130px !important;
+    margin-bottom: 8px;
+}
+
+.print-logo {
+    display: none;
+}
+
+.qr-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.qr-caption {
+    font-size: 11px;
+    font-family: 'din-reg', sans-serif;
+}
